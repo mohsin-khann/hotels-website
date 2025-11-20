@@ -1,0 +1,130 @@
+/* ---------------------------------------------
+   CUSTOM THEME – Luxe Hotel
+   All new animations, colors & enhancements here
+------------------------------------------------*/
+
+/* ===== Global Colours ===== */
+:root {
+  --luxe-primary: #c59d5f;      /* Gold */
+  --luxe-primary-dark: #a7844f;
+  --luxe-dark: #1a1a1a;
+  --luxe-gray: #777;
+  --luxe-light: #f8f8f8;
+}
+
+/* ===== Modern Font Weighting ===== */
+body {
+  font-family: 'Poppins', sans-serif !important;
+  color: var(--luxe-dark);
+}
+
+/* ===== Buttons ===== */
+.btn-luxe-primary {
+  background: var(--luxe-primary) !important;
+  border-color: var(--luxe-primary) !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  transition: .3s;
+}
+.btn-luxe-primary:hover {
+  background: var(--luxe-primary-dark) !important;
+  border-color: var(--luxe-primary-dark) !important;
+}
+
+.btn-luxe-outline {
+  background: transparent !important;
+  border: 2px solid var(--luxe-primary) !important;
+  color: var(--luxe-primary) !important;
+  font-weight: 600 !important;
+  transition: .3s;
+}
+.btn-luxe-outline:hover {
+  background: var(--luxe-primary) !important;
+  color: #fff !important;
+}
+
+/* ===== Hero Text Improvements ===== */
+.hero-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 60px !important;
+  line-height: 1.2 !important;
+}
+.hero-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* ===== Hero Slide Overlay ===== */
+.overlay-gradient {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+
+/* ===== Smooth Fade Animations ===== */
+.animate-box {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .7s ease;
+}
+.animate-box.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Trigger animation */
+[data-animate-effect="fadeInUp"].in-view {
+  animation: fadeInUp .8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Section Titles ===== */
+.section-title h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 42px !important;
+}
+
+/* ===== Room Cards ===== */
+.feature-full-1col .desc,
+.f-hotel .desc {
+  border-radius: 12px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== Blog Hover Effect ===== */
+.hotel-blog {
+  transition: .3s;
+}
+.hotel-blog:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ===== Subscribe Box ===== */
+#get-subscribe {
+  background: linear-gradient(135deg, var(--luxe-primary) 0%, #d4b27f 100%) !important;
+  color: #fff;
+}
+#get-subscribe input {
+  border-radius: 8px !important;
+}
+
+/* ===== Footer Styling ===== */
+#footer {
+  background: #111 !important;
+  color: #ddd !important;
+}
+#footer h3 {
+  color: var(--luxe-primary);
+}
